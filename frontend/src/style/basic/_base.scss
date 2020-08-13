@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: auto;
+  font-family: Varela;
+}
+
+body {
+  background: linear-gradient($dark60, $dark60),
+    url(../assets/img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) minmax(
+      60px,
+      1fr
+    );
+}
+
+p,
+a,
+button {
+  font-family: Varela, sans-serif;
+  color: $light;
+  text-decoration: none;
+}
+
+a,
+button,
+.logo {
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+}

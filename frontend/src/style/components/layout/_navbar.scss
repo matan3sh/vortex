@@ -1,0 +1,48 @@
+nav {
+  display: flex;
+  align-items: center;
+  height: 120px;
+}
+
+.logo {
+  width: 280px;
+}
+
+.links {
+  margin-left: auto;
+}
+
+.links a {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  transition: $transition;
+  margin-left: 40px;
+}
+
+.links a:hover {
+  color: $accent;
+}
+
+.active {
+  border: none;
+  background-color: $accent;
+  padding: 8px 25px;
+  transition: $transition;
+}
+
+.active:hover {
+  color: #fff !important;
+  background-color: $accentHover;
+}
+
+@media only screen and (max-width: 1100px) {
+  .logo {
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 785px) {
+  .links {
+    display: none;
+  }
+}
