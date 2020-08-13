@@ -45,3 +45,9 @@ button,
 *:focus {
   outline: none;
 }
+
+.container {
+  color: $light;
+  direction: rtl;
+  grid-column: 4 / span 4;
+}

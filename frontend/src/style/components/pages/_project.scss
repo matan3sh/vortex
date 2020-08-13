@@ -1,0 +1,38 @@
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4rem;
+}
+
+.project__card {
+  border: 1px #ccc dotted;
+  border-radius: 20px;
+  padding: 0 0 20px;
+  margin: 20px;
+  transition: $transition;
+}
+
+.project__card:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.project__card img:hover {
+  transform: scale(1.01);
+}
+
+.project__card img {
+  object-fit: contain;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project__content {
+  padding: 5px 10px;
+  margin-top: 0.5rem;
+}
+
+.project__content p {
+  margin-top: 0.2rem;
+}

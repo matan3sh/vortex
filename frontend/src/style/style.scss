@@ -7,7 +7,6 @@
 @import 'basic/input';
 
 // Components
-@import 'components/pages/home';
 @import 'components/hero/info';
 @import 'components/hero/feature';
 
@@ -15,6 +14,10 @@
 @import 'components/layout/header';
 @import 'components/layout/navbar';
 @import 'components/layout/sidenav';
+
+// Pages
+@import 'components/pages/home';
+@import 'components/pages/project';
 
 // Modal
 @import 'components/modal/aboutmodal';
