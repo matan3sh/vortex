@@ -5,11 +5,12 @@
 }
 
 .project__card {
-  border: 1px #ccc dotted;
-  border-radius: 20px;
-  padding: 0 0 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+
+  padding: 0 0 10px;
   margin: 20px;
   transition: $transition;
+  background-color: $dark80;
 }
 
 .project__card:hover {
@@ -17,15 +18,8 @@
   cursor: pointer;
 }
 
-.project__card img:hover {
-  transform: scale(1.01);
-}
-
 .project__card img {
   object-fit: contain;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 .project__content {
@@ -35,4 +29,47 @@
 
 .project__content p {
   margin-top: 0.2rem;
+}
+
+@media only screen and (max-width: 1178px) {
+  .project {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 806px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .project__card img {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .project__card img {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 488px) {
+  .project__card img {
+    width: 220px;
+  }
+
+  .project__content h3 {
+    font-size: 1rem;
+  }
+
+  .project__content p {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .project__card {
+    position: relative;
+    right: 30px;
+  }
 }

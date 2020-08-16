@@ -6,6 +6,7 @@ import Project from './components/pages/Project';
 import Contact from './components/pages/Contact';
 import About from './components/pages/About';
 import Header from './components/layout/Header';
+import FloatingActions from './components/shared/FloatingActions';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/about' component={About} />
         </Switch>
+        <FloatingActions />
       </main>
     </Router>
   );

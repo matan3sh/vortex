@@ -91,3 +91,17 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .header__button {
+    position: relative;
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .header__button {
+    position: relative;
+    right: 50px;
+  }
+}
